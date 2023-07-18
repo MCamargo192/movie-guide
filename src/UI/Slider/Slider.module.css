@@ -1,0 +1,46 @@
+:root {
+  --width: 120px;
+}
+
+.slider {
+  margin: 1rem auto;
+}
+
+.slider-list {
+  display: flex;
+  overflow-y: hidden;
+  gap: 0.5rem;
+}
+
+.slider-item {
+  cursor: pointer;
+  justify-items: center;
+  margin-bottom: 0.5rem;
+  width: var(--width);
+}
+
+.slider-img {
+  width: var(--width);
+  height: calc(var(--width) * 1.5);
+  object-fit: cover;
+  border-radius: 3%;
+}
+
+.slider-caption {
+  position: relative;
+  background-color: black;
+  text-align: center;
+  vertical-align: middle;
+  height: 3rem;
+  top: -5%;
+  padding: 0.2rem;
+  border-radius: 0 0 3% 3%;
+}
+
+.person {
+  color: var(--first-color);
+}
+
+.character {
+  overflow-y: auto;
+}

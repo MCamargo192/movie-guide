@@ -1,0 +1,18 @@
+.container {
+  padding-bottom: 0;
+  display: flex;
+  overflow-y: hidden;
+}
+
+.grid {
+  justify-content: space-evenly;
+  overflow: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 170px);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scroll {
+  overflow: auto;
+}

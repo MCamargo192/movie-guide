@@ -1,0 +1,19 @@
+.container__bar {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--second-color);
+  color: var(--title-color);
+  /* padding-top: 0.2rem; */
+  /* padding-bottom: 0.3rem; */
+}
+
+.list-item {
+  cursor: pointer;
+  font-weight: var(--font-semi-bold);
+  padding: 0 0.3rem;
+  padding-bottom: 0.5rem;
+}
+
+.active {
+  border-bottom: 0.25rem solid white;
+}

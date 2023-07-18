@@ -1,0 +1,29 @@
+.grid {
+  max-width: 100%;
+  height: 100vh;
+  display: block;
+  margin: 2% 5%;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.centralized {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: var(--first-color);
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.error {
+  margin-top: 2rem;
+}

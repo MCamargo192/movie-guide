@@ -1,0 +1,37 @@
+.media {
+  display: flex;
+  padding: 0;
+  width: fit-content;
+}
+
+.media-link {
+  cursor: pointer;
+  margin: 0.7rem 0;
+  font-size: large;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.media-link:hover {
+  color: #f7bb0e;
+}
+
+.media-link span {
+  vertical-align: middle;
+  padding-left: 0.25rem;
+}
+
+.external-link {
+  margin-right: 1.5rem;
+}
+
+.page-link:link,
+.page-link:visited,
+.page-link:active {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.page-link:hover {
+  color: #f7bb0e;
+}

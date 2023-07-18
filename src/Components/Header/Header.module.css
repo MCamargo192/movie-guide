@@ -1,0 +1,49 @@
+.header {
+  height: var(--hearder-height);
+  background-color: var(--text-color-second);
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-medium);
+  color: var(--first-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0.4rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  justify-items: left;
+}
+
+.login {
+  cursor: pointer;
+  border-radius: 1rem;
+  width: 4rem;
+  height: 2.2rem;
+  background: none;
+  color: var(--first-color);
+  font-weight: bold;
+  border: var(--first-color) solid;
+}
+
+.login:hover {
+  color: var(--first-color-darker);
+  border: var(--first-color-darker) solid;
+  background: var(--first-color);
+}
+
+.avatar {
+  border-radius: 50%;
+  border: var(--first-color) solid;
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.avatar span {
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 20%;
+  margin-left: 10%;
+}

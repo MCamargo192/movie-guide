@@ -1,0 +1,44 @@
+:root {
+  --size: 0px;
+  --bord: 0px;
+  --value: 0%;
+}
+
+.chart {
+  width: var(--size);
+  height: var(--size);
+  margin: 0.5em auto;
+  border-radius: 50%;
+  background-image: conic-gradient(
+    #f7bb0e var(--value),
+    #86680d9d var(--value)
+  );
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -100%;
+  left: 38%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.chart::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - var(--bord));
+  height: calc(100% - var(--bord));
+  background: #29282c;
+  border-radius: inherit;
+}
+
+p {
+  position: relative;
+  z-index: 1;
+  font-size: calc(var(--size) * 0.4);
+  font-weight: 900;
+  color: #ffffff;
+  margin: 0;
+}
