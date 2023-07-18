@@ -36,7 +36,7 @@ const Person = () => {
         fetchedPerson.deathday = getFormatedDate(fetchedPerson.deathday);
       const shows = await getPersonCredits(fetchedPerson.id);
       fetchedPerson.shows = shows[`${fetchedPerson.knownFor === 'Acting' ? 'cast' : 'crew'}`].slice(0, 15);
-      console.log(fetchedPerson);
+
       setPerson(fetchedPerson);
       setErrorMsg('');
     } catch (error) {

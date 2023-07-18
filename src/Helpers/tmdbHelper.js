@@ -132,7 +132,6 @@ const tmdbHelpers = {
         photo: item.profile_path ? `https://image.tmdb.org/t/p/original${item.profile_path}` : NO_PHOTO,
       }));
 
-      // console.log(data.results);
       // let detailedPeople = await Promise.all(data.results.map(async person => await tmdbHelpers.getPersonDetails(person.id)));
 
       people = people.reduce((acc, current) => {
