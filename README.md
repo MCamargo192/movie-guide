@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Movie Guide
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React web app for discovering movies, TV shows, and people powered by the [TMDB API](https://www.themoviedb.org/documentation/api).
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Home** — daily trending movies, TV shows, and people
+- **Movies catalogue** — browse Popular, Now Playing, Upcoming, and Top Rated movies
+- **TV Shows catalogue** — browse Popular, On the Air, and Top Rated series
+- **People catalogue** — explore popular actors and crew members
+- **Detail pages** — full info for any movie or show: overview, genres, cast, crew, trailer, images, streaming providers, and social media links
+- **Person pages** — bio, filmography (cast & crew credits), photo gallery, and social media links
+- **Search** — find movies, TV shows, or people by name
+- Infinite scroll / "Load More" pagination
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React 18 + React Router v6
+- TMDB REST API
+- CSS Modules
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js 16+
+- A free [TMDB API key](https://www.themoviedb.org/settings/api)
 
-### `npm run build`
+### Install & run
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Other scripts
 
-### `npm run eject`
+| Command | Description |
+|---------|-------------|
+| `npm test` | Run tests in watch mode |
+| `npm run build` | Production build to `build/` |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+src/
+  Components/
+    Header/        # Navigation bar and router
+    Pages/
+      Catalogue/   # Movies, TV, and people listing pages
+      Details/     # Show and person detail pages
+      Home/        # Trending content home page
+      Search/      # Search results page
+      Profile/     # User profile page
+  UI/              # Reusable UI components (Cards, Carousel, Slider, etc.)
+  Helpers/
+    tmdbHelper.js  # All TMDB API calls and data helpers
+```
